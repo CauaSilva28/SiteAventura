@@ -59,8 +59,13 @@ h1{
 }
 
 #imagemcapa{
+    background-color:#000;
     width:100%;
-    margin-top:80px;
+    height:500px;
+    margin-top:90px;
+    background-image:url(../img/capaaventura.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 #inicio{
@@ -77,8 +82,10 @@ h2{
 }
 
 #botaoprincipal{
+    transform:translateX(0px);
+    animation:float 7s ease-out infinite;
     margin-top:50px;
-    font-size:25px;
+    font-size:22px;
     border-radius:2em;
     height:50px;
     width:400px;
@@ -97,6 +104,20 @@ h2{
     height:60px;
     width:420px;
     transition:0.5s;
+}
+
+@keyframes float {
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-40px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
 }
 
 @media screen and (max-width: 1900px){
