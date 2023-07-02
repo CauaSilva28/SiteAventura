@@ -69,9 +69,10 @@ h1{
 }
 
 #inicio{
-    position:absolute;
-    top:27%;
+    position:relative;
+    top:40%;
     left:23%;
+    width:1020px;
 }
 
 h2{
