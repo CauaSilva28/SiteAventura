@@ -209,3 +209,11 @@ hr{
     flex:5;
     opacity:100%;
 }
+
+footer{
+    text-align:center;
+    font-size:0.8vw;
+    font-family:candara;
+    margin-top:1vw;
+    color:#3258a8;
+}
