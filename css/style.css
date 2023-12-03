@@ -62,7 +62,7 @@ h1{
 }
 
 h2{
-    font-size:1.1vw;
+    font-size:1.5vw;
     text-align:center;
     font-family:arial black;
     text-transform:uppercase;
@@ -115,12 +115,12 @@ hr{
 #inicio{
     position:absolute;
     top:18vw;
-    left:15vw;
-    width:70vw;
+    left:13vw;
+    width:75vw;
 }
 
 .fonttitle{
-    font-size:1.5vw;
+    font-size:1.7vw;
     font-family:arial black;
     color:#fff;
     text-transform:uppercase;
@@ -163,6 +163,14 @@ hr{
     100%{
         transform:translateY(0vw);
     }
+}
+
+footer{
+    text-align:center;
+    font-size:0.8vw;
+    font-family:candara;
+    margin-top:1vw;
+    color:#3258a8;
 }
 
 /*pacotes*/
@@ -210,10 +218,45 @@ hr{
     opacity:100%;
 }
 
-footer{
-    text-align:center;
-    font-size:0.8vw;
+/*sobre*/
+
+.assuntosobre{
+    display:flex;
+    align-items:center;
+    background-color:#cdd4e4;
+    border-radius:2em;
+    box-shadow: 2px 2px 25px 1px #00184d;
+    margin:0 5vw 0 5vw;
+    justify-content:space-evenly;
+    padding:2vw;
+    margin-top:2vw;
+}
+
+.assuntosobre:hover{
+    scale:102%;
+}
+
+.imgsobre{
+    width:30vw;
+    border-radius:2em;
+}
+
+.tituloetexto{
+    display:block;
+    width:35vw;
+}
+
+.textosobre{
+    text-indent:4vw;
+    text-align:justify;
+    font-size:1.4vw;
     font-family:candara;
-    margin-top:1vw;
-    color:#3258a8;
+}
+
+.titulosobre{
+    font-size:1.7vw;
+    font-family:candara black;
+    color:#063db4;
+    text-align:center;
+    text-transform:uppercase;
 }
