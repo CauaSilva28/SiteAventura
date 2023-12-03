@@ -25,7 +25,7 @@ a{
     text-transform:capitalize;
 }
 
-nav ul li a:hover{
+nav .ulnav .linav a:hover{
     color:#3258a8;
 }
 
@@ -34,11 +34,11 @@ nav{
     font-family:arial;
 }
 
-ul li{
+.ulnav .linav{
     list-style:none;
 }
 
-nav ul li{
+nav .ulnav .linav{
     display:inline;
     margin-right:3vw;
 }
@@ -62,7 +62,7 @@ h1{
 }
 
 h2{
-    font-size:1.5vw;
+    font-size:1.6vw;
     text-align:center;
     font-family:arial black;
     text-transform:uppercase;
@@ -128,7 +128,7 @@ hr{
 
 #botaoprincipal{
     transform:translateX(0vw);
-    animation:float 7s ease-out infinite;
+    animation:movimento 7s ease-out infinite;
     margin-top:4vw;
     font-size:1.2vw;
     border-radius:2em;
@@ -151,7 +151,7 @@ hr{
     transition:0.5s;
 }
 
-@keyframes float {
+@keyframes movimento {
     0%{
         transform:translateY(0vw);
     }
@@ -259,4 +259,66 @@ footer{
     color:#063db4;
     text-align:center;
     text-transform:uppercase;
+}
+
+/*Equipe*/
+
+#equipe{
+    display:flex;
+    justify-content:space-around;
+}
+
+#pessoaequipe{
+    width:15vw;
+    padding:1.5vw;
+    margin-top:1vw;
+    background: rgb(3,15,56);
+    background: linear-gradient(170deg, rgb(0, 29, 122, 1) 5%, rgb(6, 40, 161, 1) 30%, rgb(15, 80, 184, 1) 40%, rgb(20, 101, 207, 1) 70%, rgb(11, 108, 212, 1) 80%, rgba(52,151,254,1) 98%);
+    box-shadow:2px 2px 12px 2px #00184d;
+    border-radius:1em;
+    animation:tamanho 5s ease-out infinite;
+}
+
+.imgequipe{
+    width:8vw;
+    border-radius:5em;
+    border:2px solid #001f61;
+    box-shadow:2px 2px 20px 1px #5087ff;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.nomeequipe{
+    color:#fff;
+    font-size:1.2vw;
+    font-family:arial black;
+    text-align:center;
+}
+
+.textoequipe{
+    font-size:1vw;
+    font-family:candara black;
+    color:#001238;
+    margin-top:2vw;
+    margin-left:1.1vw;
+    list-style:circle;
+}
+
+ul{
+    padding-left:0;
+}
+
+@keyframes tamanho{
+    0%{
+        border:2px solid #fff;
+    }
+
+    50%{
+        border:2px solid #002981;
+    }
+
+    100%{
+        border:2px solid #fff;
+    }
 }
