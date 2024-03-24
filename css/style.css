@@ -1,3 +1,19 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0a3694;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0a245e;
+}
+
 body{
     margin:0;
     padding:0;
@@ -11,7 +27,7 @@ header{
     left:0;
     width:100%;
     height:4vw;
-    background-color:#000;
+    background-color:rgba(0,0,0,80%);
     display:flex;
     align-items:center;
     padding:0.5vw;
@@ -25,7 +41,7 @@ a{
     text-transform:capitalize;
 }
 
-nav .ulnav .linav a:hover{
+nav ul li a:hover{
     color:#3258a8;
 }
 
@@ -34,11 +50,8 @@ nav{
     font-family:arial;
 }
 
-.ulnav .linav{
+nav ul li{
     list-style:none;
-}
-
-nav .ulnav .linav{
     display:inline;
     margin-right:3vw;
 }
@@ -86,9 +99,10 @@ hr{
     background-color:#000;
     width:100%;
     height:40vw;
-    margin-top:3vw;
     background-repeat:no-repeat;
     background-size:cover;
+    background-attachment: fixed;
+    transition:1s;
 }
 
 #botoespassarimg{
@@ -163,14 +177,6 @@ hr{
     100%{
         transform:translateY(0vw);
     }
-}
-
-footer{
-    text-align:center;
-    font-size:0.8vw;
-    font-family:candara;
-    margin-top:1vw;
-    color:#3258a8;
 }
 
 /*pacotes*/
@@ -276,7 +282,7 @@ footer{
     background: linear-gradient(170deg, rgb(0, 29, 122, 1) 5%, rgb(6, 40, 161, 1) 30%, rgb(15, 80, 184, 1) 40%, rgb(20, 101, 207, 1) 70%, rgb(11, 108, 212, 1) 80%, rgba(52,151,254,1) 98%);
     box-shadow:2px 2px 12px 2px #00184d;
     border-radius:1em;
-    animation:tamanho 5s ease-out infinite;
+    animation:corborda 5s ease-out infinite;
 }
 
 .imgequipe{
@@ -302,14 +308,13 @@ footer{
     color:#001238;
     margin-top:2vw;
     margin-left:1.1vw;
-    list-style:circle;
 }
 
 ul{
     padding-left:0;
 }
 
-@keyframes tamanho{
+@keyframes corborda{
     0%{
         border:2px solid #fff;
     }
@@ -321,4 +326,131 @@ ul{
     100%{
         border:2px solid #fff;
     }
+}
+
+#contato{
+    background-image:url(../img/fundocontato.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding:0.5vw;
+    margin-top: 1vw;
+    box-shadow:2px 2px 6px 8px #154ec9;
+}
+
+#contato h2{
+    background: #ffffff;
+    background: linear-gradient(0deg, rgb(192, 192, 192) 15%, rgb(207, 207, 207) 30%, rgb(219, 219, 219) 46%, rgb(236, 236, 236) 57%, rgb(255, 255, 255) 75%);
+    -webkit-background-clip: text;
+}
+
+#telalogin{
+    width:22vw;
+    height:30vw;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#000;
+    border-radius:1em;
+    padding:1vw;
+    animation:aumentando 5s ease-out infinite;
+}
+
+@keyframes aumentando{
+    0%{
+        scale:1;
+    }
+
+    50%{
+        scale:1.05;
+    }
+
+    100%{
+        scale:1;
+    }
+}
+
+#telalogin img{
+    width:5vw;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1vw;
+}
+
+#telalogin h3{
+    color:#fff;
+    text-align:center;
+    font-size:1.3vw;
+    font-family:verdana;
+}
+
+#telalogin button{
+    width:100%;
+    height:3vw;
+    border-radius:3em;
+    margin-top:3vw;
+    background-color:#0066ff;
+    border:none;
+    font-size:1vw;
+}
+
+#telalogin button:hover{
+    background-color:#0040a0;
+}
+
+.inputetexto{
+    margin-top:2vw;
+}
+
+.inputetexto h4{
+    color:#fff;
+    font-size:1.3vw;
+    font-family:candara;
+    margin-bottom:0;
+}
+
+.inputetexto input{
+    margin-top:0.5vw;
+    width:20vw;
+    height:1vw;
+    border-radius:2em;
+    padding:0.5vw;
+    font-size:1vw;
+}
+
+#telacontatos{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:3vw;
+    background-color:#0f3fa7;
+    padding:1.5vw;
+    box-shadow:2px 2px 6px 8px #0f3fa7;
+}
+
+#telacontatos img{
+    width:4vw;
+}
+
+#telacontatos h3{
+    font-size:1.3vw;
+    color:#fff;
+    font-family:candara;
+    margin-bottom:0;
+    margin-top:0.5vw;
+}
+
+.iconenome{
+    text-align:center;
+}
+
+.iconenome:hover{
+    scale:1.1;
+}
+
+footer{
+    text-align:center;
+    font-size:0.8vw;
+    font-family:candara;
+    color:#ffffff;
+    background-color:#103483;
 }
