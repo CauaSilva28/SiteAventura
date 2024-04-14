@@ -177,11 +177,11 @@ hr{
     box-shadow: 3px 0px 38px 6px #3258a8;
     background: rgb(3,15,56);
     background: linear-gradient(170deg, rgba(3,15,56,1) 14%, rgba(0,29,129,1) 35%, rgba(15,71,163,1) 54%, rgba(18,87,176,1) 67%, rgba(8,118,235,1) 77%, rgba(52,151,254,1) 98%);
+    transition:ease-in-out 0.5s;
 }
 
 #botaoprincipal:hover{
     scale:110%;
-    transition:0.5s;
 }
 
 @keyframes movimento {
@@ -255,6 +255,7 @@ hr{
     justify-content:space-evenly;
     padding:2vw;
     margin-top:2vw;
+    transition:ease-in-out 0.5s;
 }
 
 .assuntosobre:hover{
@@ -459,6 +460,7 @@ ul{
 
 .iconenome{
     text-align:center;
+    transition:ease-in-out 0.5s;
 }
 
 .iconenome:hover{
