@@ -138,6 +138,7 @@ hr{
     border:1px solid #c7d9ff;
     box-shadow: 4px 0px 18px 4px #3258a8;
     background-color:#3258a8;
+    cursor:pointer;
 }
 
 .passarimg:hover{
@@ -177,6 +178,7 @@ hr{
     box-shadow: 3px 0px 38px 6px #3258a8;
     background: rgb(3,15,56);
     background: linear-gradient(170deg, rgba(3,15,56,1) 14%, rgba(0,29,129,1) 35%, rgba(15,71,163,1) 54%, rgba(18,87,176,1) 67%, rgba(8,118,235,1) 77%, rgba(52,151,254,1) 98%);
+    cursor:pointer;
     transition:ease-in-out 0.5s;
 }
 
@@ -215,6 +217,7 @@ hr{
     background-repeat:no-repeat;
     background-size:auto 100%;
     transition:all .8s cubic-bezier(.25, .4, .45, 1.4);
+    cursor:pointer;
 }  
 
 .nomepacotes{
@@ -411,6 +414,7 @@ ul{
     background-color:#0066ff;
     border:none;
     font-size:1vw;
+    cursor:pointer;
 }
 
 #telalogin button:hover{
@@ -446,10 +450,6 @@ ul{
     box-shadow:2px 2px 6px 8px #0f3fa7;
 }
 
-#telacontatos img{
-    width:4vw;
-}
-
 #telacontatos h3{
     font-size:1.3vw;
     color:#fff;
@@ -465,6 +465,14 @@ ul{
 
 .iconenome:hover{
     scale:1.1;
+}
+
+.contato-icon{
+    font-size:4vw;
+}
+
+.iconenome:hover .contato-icon{
+    color:#0084ff;
 }
 
 footer{
