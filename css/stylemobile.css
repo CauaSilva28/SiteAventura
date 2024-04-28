@@ -1,0 +1,61 @@
+@media(max-width: 900px){
+    /* HEADER */
+    #menumobile{
+        display:flex;
+    }
+
+    .header-left nav{
+        display:none;
+    }
+
+    header{
+        position:static;
+        background-color:#000;
+        height:10vw;
+    }
+
+    #logo{
+        scale:1.7;
+        margin-left:10vw
+    }
+
+    #toggletheme{
+        font-size:3vw;
+        margin-right:2vw;
+    }
+    /* FIM HEADER */
+    /* INICIO */
+    #imagemcapa{
+        height:70vw;
+    }
+
+    #inicio{
+        top:23vw;
+        left:5vw;
+        width:90vw;
+    }
+
+    .fonttitle{
+        font-size:4vw;
+    }
+
+    #botaoprincipal{
+        font-size:3.4vw;
+        height:8vw;
+        width:50vw;
+        margin-top:6vw;
+    }
+
+    #botoespassarimg{
+        position:absolute;
+        display:flex;
+        top:65vw;
+        left:27vw;
+        gap:5vw;
+    }
+    
+    .passarimg{
+        width:10vw;
+        height:3vw;
+    }
+}

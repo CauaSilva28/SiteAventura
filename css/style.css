@@ -18,6 +18,10 @@
     --primary-bg-color: #ebebeb;
     --secundary-bg-color: #cdd4e4;
 
+    --border-color:#151941;
+    --icons-color:#071d52;
+    --secundary-icons-color:#214db6;
+
     --title-color: #063db4;
     --secundary-title-color:#b0c3ff;
     --text-color: #000;
@@ -26,6 +30,10 @@
 :root[data-theme='dark']{
     --primary-bg-color: #05071d;
     --secundary-bg-color: #151941;
+
+    --border-color:#cdd4e4;
+    --icons-color:#cad5f0;
+    --secundary-icons-color:#6074a3;
 
     --title-color: #ebebeb;
     --secundary-title-color:#5d6a91;
@@ -74,6 +82,43 @@ nav ul li{
     list-style:none;
     display:inline;
     margin-right:3vw;
+}
+
+#menumobile{
+    position:fixed;
+    display:none;
+    bottom:0;
+    background-color:var(--secundary-bg-color);
+    width:100%;
+    z-index:999;
+    justify-content: space-around;
+    align-items:center;
+    padding:3vw 0vw 2vw 0vw;
+    border-top:1px solid var(--border-color);
+}
+
+.menumobile-items{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    cursor:pointer;
+}
+
+.menumobile-items:hover .menumobile-icon,
+.menumobile-items:hover .menumobile-text{
+    color:var(--secundary-icons-color);
+}
+
+.menumobile-icon{
+    color:var(--icons-color);
+    font-size:4vw;
+    transition: ease-in-out 0.5s;
+}
+
+.menumobile-text{
+    color:var(--icons-color);
+    font-size:3vw;
+    transition: ease-in-out 0.5s;
 }
 
 #icon{
