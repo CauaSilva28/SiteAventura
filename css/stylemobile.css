@@ -12,11 +12,12 @@
         position:static;
         background-color:#000;
         height:10vw;
+        width:99%;
     }
 
     #logo{
-        scale:1.7;
-        margin-left:10vw
+        scale:1.9;
+        margin-left:12vw
     }
 
     #toggletheme{
@@ -27,16 +28,16 @@
     /* INICIO */
     #imagemcapa{
         height:70vw;
+        gap:5vw;
     }
 
     #inicio{
-        top:23vw;
-        left:5vw;
         width:90vw;
+        margin-top:2vw;
     }
 
     .fonttitle{
-        font-size:4vw;
+        font-size:3.6vw;
     }
 
     #botaoprincipal{
@@ -47,15 +48,120 @@
     }
 
     #botoespassarimg{
-        position:absolute;
         display:flex;
-        top:65vw;
-        left:27vw;
         gap:5vw;
     }
     
     .passarimg{
         width:10vw;
         height:3vw;
+    }
+
+    .passarimg:hover{
+        scale:120%;
+    }
+    /* FIM INICIO */
+    /* PACOTES AVENTURA */
+    h2{
+        font-size:3.5vw;
+    }
+
+    .conjuntopacotes{
+        height:40vw;
+    }
+
+    .nomepacotes{
+        font-size:0vw;
+    }
+
+    .conjuntopacotes > div:hover .nomepacotes{
+        font-size:3vw;
+    }
+    /* FIM PACOTES AVENTURA */
+    /* SOBRE */
+    .assuntosobre{
+        flex-direction:column;
+        padding:4vw;
+        margin-top:5vw;
+    }
+
+    .imgsobre{
+        width:60vw;
+    }
+
+    .tituloetexto{
+        width:70vw;
+    }
+
+    .titulosobre{
+        font-size:4vw;
+    }
+
+    .textosobre{
+        font-size:3vw;
+    }
+    /* FIM SOBRE */
+    /* EQUIPE */
+    #equipe{
+        flex-direction: column;
+        gap:5vw;
+        align-items:center;
+    }
+
+    #pessoaequipe{
+        width:50vw;
+        padding:6vw;
+    }
+
+    .imgequipe{
+        width:20vw;
+    }
+
+    .nomeequipe{
+        font-size:4vw;
+    }
+
+    .textoequipe{
+        font-size:3vw;
+    }
+    /* FIM EQUIPE */
+    /* CONTATO */
+    #telalogin{
+        width:55vw;
+        height:70vw;
+        padding:4vw 2vw 4vw 2vw;
+        margin-top:4vw;
+    }
+
+    #telalogin img{
+        width:14vw;
+        margin-top:2vw;
+    }
+
+    #telalogin h3{
+        font-size:3vw;
+    }
+
+    #telalogin button{
+        height:5vw;
+        margin-top:8vw;
+        font-size:2.5vw;
+    }
+
+    .inputetexto h4{
+        font-size:3vw;
+        margin-left:3vw;
+    }
+
+    .inputetexto input{
+        margin-top:2vw;
+        width:50vw;
+        height:3vw;
+        padding:0.5vw;
+        font-size:2.5vw;
+    }
+    /* FIM CONTATO */
+    footer{
+        margin-bottom:13.5vw;
     }
 }

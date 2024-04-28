@@ -180,6 +180,11 @@ hr{
 }
 
 #imagemcapa{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:2vw;
     background-color:#000;
     width:100%;
     height:40vw;
@@ -190,9 +195,7 @@ hr{
 }
 
 #botoespassarimg{
-    position:absolute;
-    top:35vw;
-    left:43.5vw;
+    margin-top:2vw;
 }
 
 .passarimg{
@@ -204,6 +207,7 @@ hr{
     box-shadow: 4px 0px 18px 4px #3258a8;
     background-color:#3258a8;
     cursor:pointer;
+    transition:ease-in-out 0.5s;
 }
 
 .passarimg:hover{
@@ -212,10 +216,7 @@ hr{
 }
 
 #inicio{
-    position:absolute;
-    top:18vw;
-    left:13vw;
-    width:75vw;
+    margin-top:6vw;
 }
 
 .fonttitle{
@@ -285,8 +286,12 @@ hr{
     cursor:pointer;
 }  
 
+.imagempacotes{
+    display:flex;
+    align-items: center;
+}
+
 .nomepacotes{
-    margin-top:8vw;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -332,7 +337,7 @@ hr{
 
 .imgsobre{
     width:30vw;
-    border-radius:2em;
+    border-radius:2rem;
 }
 
 .tituloetexto{
@@ -492,6 +497,7 @@ ul{
 
 .inputetexto h4{
     color:#fff;
+    margin-left:1vw;
     font-size:1.3vw;
     font-family:candara;
     margin-bottom:0;
@@ -504,6 +510,9 @@ ul{
     border-radius:2em;
     padding:0.5vw;
     font-size:1vw;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #telacontatos{
