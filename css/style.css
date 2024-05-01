@@ -210,11 +210,6 @@ hr{
     transition:ease-in-out 0.5s;
 }
 
-.passarimg:hover{
-    background-color:#c7d9ff;
-    scale:130%;
-}
-
 #inicio{
     margin-top:6vw;
 }
