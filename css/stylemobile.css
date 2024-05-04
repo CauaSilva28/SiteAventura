@@ -29,6 +29,7 @@
     #imagemcapa{
         height:70vw;
         gap:5vw;
+        background-position: center;
     }
 
     #inicio{
