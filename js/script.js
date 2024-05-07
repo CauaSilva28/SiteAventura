@@ -81,3 +81,21 @@ function changeTheme(){
 }
 
 toggleTheme.addEventListener('click', changeTheme);
+
+//Transicao aparecer scroll
+const myObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry) {
+        if(entry.isIntersecting){
+            entry.target.classList.add('transicao');
+        }
+        else{
+            entry.target.classList.remove('transicao');
+        }
+    });
+});
+
+const elements = document.querySelectorAll('.localaparecer');
+const elements2 = document.querySelectorAll('.localsurgir');
+
+elements.forEach((element) => myObserver.observe(element));
+elements2.forEach((element) => myObserver.observe(element));

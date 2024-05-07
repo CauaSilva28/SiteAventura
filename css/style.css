@@ -363,7 +363,7 @@ hr{
     justify-content:space-around;
 }
 
-#pessoaequipe{
+.pessoaequipe{
     width:15vw;
     padding:1.5vw;
     margin-top:1vw;
@@ -552,3 +552,34 @@ footer{
     color:#ffffff;
     background-color:#103483;
 }
+
+/* Transição scroll */
+.localaparecer{
+    opacity:0;
+    filter:blur(10px);
+    transition:all 1s;
+}
+.localsurgir{
+    opacity:0;
+    filter:blur(10px);
+    transition:all 1s;
+    transform:translateX(-100%);
+}
+
+.transicao{
+    opacity:1;
+    filter:blur(0);
+    transition:all 1s;
+    transform:translateX(0%);
+}
+
+#equipe :nth-child(2){
+    transition-delay: 400ms;
+}
+#equipe :nth-child(3){
+    transition-delay: 700ms;
+}
+#equipe :nth-child(4){
+    transition-delay: 1000ms;
+}
+/* Fim transicao com scroll */

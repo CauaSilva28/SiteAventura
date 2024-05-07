@@ -54,7 +54,7 @@
     }
     
     .passarimg{
-        width:10vw;
+        width:9vw;
         height:3vw;
     }
 
@@ -109,7 +109,7 @@
         align-items:center;
     }
 
-    #pessoaequipe{
+    .pessoaequipe{
         width:50vw;
         padding:6vw;
     }
@@ -182,4 +182,16 @@
         padding:1vw;
         margin-bottom:13vw;
     }
+
+    /* transicao scroll */
+    #equipe :nth-child(2){
+        transition-delay: 0ms;
+    }
+    #equipe :nth-child(3){
+        transition-delay: 0ms;
+    }
+    #equipe :nth-child(4){
+        transition-delay: 0ms;
+    }
+    /* fim transicao scroll */
 }
