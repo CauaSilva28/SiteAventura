@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.header-aventura{
+    position:fixed;
+    width:100%;
+    height:5vw;
+    background-image: linear-gradient(black ,rgba(0, 0, 0, 0));
+    display:flex;
+    align-items:center;
+    padding:0.5vw;
+    justify-content:flex-start;
+    z-index:9999;
+    padding-left:2vw;
+}
+.header-aventura i, .header-aventura span{
+    font-size:1.5vw;
+    font-family:candara;
+    font-weight:600;
+}
+
+.inicio-pacote{
+    background-image:url(../img/imgpacotes/imgprincipalmares.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    width:100%;
+    height:45vw;
+}
+.inicio-pacote-items{
+    width:100%;
+    height:100%;
+    background-image:linear-gradient(90deg, black, rgba(0,0,0,0));
+    display:flex;
+    align-items:center;
+}
+.inicio-pacote-elementos{
+    display:flex;
+    flex-direction: column;
+    width:40%;
+    margin-left:10vw;
+    gap:1.5vw;
+}
+.inicio-pacote-titulo{
+    font-size:3vw;
+    margin-left:-0.5vw;
+}
+.inicio-pacote-text{
+    font-size:1.3vw;
+    color:#fff;
+    font-family:candara;
+    text-align: justify;
+}
+
+/* linhas transicao */
+.transicao-cima{
+    border:none;
+    background-color:#000;
+    box-shadow:0px -2px 25px 15px #000;
+    position:relative;
+    z-index:99;
+    opacity: 1;
+    border-radius:0;
+    width:100%;
+}
+.transicao-baixo{
+    border:none;
+    background-color:var(--bg-color);
+    background-color:#000;
+    box-shadow:0px 2px 25px 15px #000;
+    position:relative;
+    z-index:99;
+    opacity: 1;
+    border-radius:0;
+    width:100%;
+}
+
+/* pacote navios */
+.pacote-navios{
+    background-image:url(../img/imgpacotes/imgnavios.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    width:100%;
+    height:50vw;
+}
+.pacote-navios-items{
+    background-image:linear-gradient(black 5%, rgba(0, 0, 0, 0.87) 55%, rgba(0,0,0,0) 70%);
+    height:75%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+}
+.pacote-navios-elementos{
+    display:flex;
+    flex-direction: column;
+    gap:1.5vw;
+    width: 70%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:3vw;
+}
+.pacote-navios-titulo{
+    font-size:2.5vw;
+}
+.pacote-navios-text{
+    font-size:1.4vw;
+    color:#fff;
+}
+
+.pacote-navios-catalogo{
+    margin-top:5vw;
+}
+.pacote-navios-catalogo .pacote-navios-subtitulo{
+    font-size:2vw;
+    color:#fff;
+    text-transform: none;
+}
+
+.catalogos-row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:3vw;
+}
+.catalogos{
+    width:16vw;
+    height:20vw;
+    background-color:#78d4ff;
+    border-radius:1rem;
+}

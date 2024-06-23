@@ -51,7 +51,7 @@ body{
     background-color:var(--primary-bg-color);
 }    
 
-header{
+.header-inicio{
     position:fixed;
     width:100%;
     height:4vw;
@@ -272,7 +272,7 @@ hr{
     margin-left:1vw;
 }
 
-.conjuntopacotes > div{
+.conjuntopacotes > a{
     flex:1;
     border-radius:1rem;
     background-position:center;
@@ -285,6 +285,10 @@ hr{
 .imagempacotes{
     display:flex;
     align-items: center;
+    height:20vw;
+    background-position: center;
+    background-size: cover;
+    border-radius:1rem;
 }
 
 .nomepacotes{
@@ -303,11 +307,11 @@ hr{
     transition:1s cubic-bezier(.25, .4, .45, 1.4);
 }
 
-.conjuntopacotes > div:hover{
+.conjuntopacotes > a:hover{
     flex:5;
 } 
 
-.conjuntopacotes > div:hover .nomepacotes{
+.conjuntopacotes > a:hover .nomepacotes{
     flex:5;
     opacity:100%;
 }
@@ -553,34 +557,3 @@ footer{
     color:#ffffff;
     background-color:#103483;
 }
-
-/* Transição scroll */
-.localaparecer{
-    opacity:0;
-    filter:blur(10px);
-    transition:all 1s;
-}
-.localsurgir{
-    opacity:0;
-    filter:blur(10px);
-    transition:all 1s;
-    transform:translateX(-100%);
-}
-
-.transicao{
-    opacity:1;
-    filter:blur(0);
-    transition:all 1s;
-    transform:translateX(0%);
-}
-
-#equipe :nth-child(2){
-    transition-delay: 400ms;
-}
-#equipe :nth-child(3){
-    transition-delay: 700ms;
-}
-#equipe :nth-child(4){
-    transition-delay: 1000ms;
-}
-/* Fim transicao com scroll */

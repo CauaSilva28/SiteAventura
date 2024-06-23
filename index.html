@@ -7,12 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="shortcut icon" href="img/icon.png" />
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/stylemobile.css" />
     </head>
     <body>
-        <header>
+        <header class="header-inicio">
             <div id="logo">
                 <img src="img/icon.png" id="icon" />
                 <h1><span class="corazul">Adventure</span> Experience</h1>
@@ -65,15 +67,39 @@
         <br>
         <hr>
 
-        <section id="pacotesaventura" class="localaparecer">
+        <section id="pacotesaventura">
             <h2>Pacotes de aventura</h2>
             <div class="conjuntopacotes">
-                <div  class="imagempacotes" style="background-image:url(img/aventura.jpg);"><h3 class="nomepacotes">Mares e rios</h3></div>
-                <div class="imagempacotes" style="background-image:url(img/aventura2.jpg);"><h3 class="nomepacotes">Montanhas</h3></div>
-                <div class="imagempacotes" style="background-image:url(img/aventura3.jpg);"><h3 class="nomepacotes">Neve</h3></div>
-                <div class="imagempacotes" style="background-image:url(img/aventura4.jpg);"><h3 class="nomepacotes">Helicópteros</h3></div>
-                <div class="imagempacotes" style="background-image:url(img/aventura5.jpg);"><h3 class="nomepacotes">Acampamentos</h3></div>
-                <div class="imagempacotes" style="background-image:url(img/aventura6.jpg);"><h3 class="nomepacotes">Cachoeiras</h3></div>
+                <a href="aventura.html">
+                    <div  class="imagempacotes" style="background-image:url(img/aventura.jpg);">
+                        <h3 class="nomepacotes">Mares e rios</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="imagempacotes" style="background-image:url(img/aventura2.jpg);">
+                        <h3 class="nomepacotes">Montanhas</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="imagempacotes" style="background-image:url(img/aventura3.jpg);">
+                        <h3 class="nomepacotes">Neve</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="imagempacotes" style="background-image:url(img/aventura4.jpg);">
+                        <h3 class="nomepacotes">Helicópteros</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="imagempacotes" style="background-image:url(img/aventura5.jpg);">
+                        <h3 class="nomepacotes">Acampamentos</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="imagempacotes" style="background-image:url(img/aventura6.jpg);">
+                        <h3 class="nomepacotes">Cachoeiras</h3>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -82,7 +108,7 @@
 
         <section id="sobre">
             <h2>Sobre nós</h2>
-            <div class="assuntosobre localsurgir">
+            <div class="assuntosobre" data-aos="fade-up-right" data-aos-duration="1000">
                 <img src="img/sobreimg.jpg" class="imgsobre"/>
                 <div class="tituloetexto">
                     <h3 class="titulosobre">Nossa empresa</h3>
@@ -94,7 +120,7 @@
             </div>
 
 
-            <div class="assuntosobre localsurgir">
+            <div class="assuntosobre" data-aos="fade-up-right" data-aos-duration="1000">
                 <div class="tituloetexto">
                     <h3 class="titulosobre">Nossa história</h3>
                     <p class="textosobre">Nossa história é entrelaçada com as trilhas que percorremos e os desafios que 
@@ -111,7 +137,7 @@
             </div>
 
 
-            <div class="assuntosobre localsurgir">
+            <div class="assuntosobre" data-aos="fade-up-right" data-aos-duration="1000">
                 <img src="img/sobreimg2.jpg" class="imgsobre"/>
                 <div class="tituloetexto">
                     <h3 class="titulosobre">Nossos valores</h3>
@@ -130,7 +156,7 @@
             <h3 class="titulosobre">Equipe</h3>
             
             <section id="equipe">
-                <div class="pessoaequipe localsurgir">
+                <div class="pessoaequipe" data-aos="flip-left" data-aos-delay="100">
                     <img class="imgequipe" src="img/pessoa1.jpg" />
                     <h4 class="nomeequipe">Bear Grylls</h4>
                     <ul>
@@ -141,7 +167,7 @@
                     </ul>
                 </div>
 
-                <div class="pessoaequipe localsurgir">
+                <div class="pessoaequipe" data-aos="flip-left" data-aos-delay="300">
                     <img class="imgequipe" src="img/pessoa2.jpg" />
                     <h4 class="nomeequipe">Ranulph Fiennes</h4>
                     <ul>
@@ -152,7 +178,7 @@
                     </ul>
                 </div>
 
-                <div class="pessoaequipe localsurgir">
+                <div class="pessoaequipe" data-aos="flip-left" data-aos-delay="500">
                     <img class="imgequipe" src="img/pessoa3.jpg" />
                     <h4 class="nomeequipe">Alex Honnold</h4>
                     <ul>
@@ -163,7 +189,7 @@
                     </ul>
                 </div>
 
-                <div class="pessoaequipe localsurgir">
+                <div class="pessoaequipe" data-aos="flip-left" data-aos-delay="700">
                     <img class="imgequipe" src="img/pessoa4.jpg" />
                     <h4 class="nomeequipe">Felix Baumgartner</h4>
                     <ul>
@@ -182,7 +208,7 @@
         <section id="contato">
             <h2>Contato</h2>
 
-            <div id="telalogin">
+            <div id="telalogin" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="img/icon.png" />
 
                 <h3>Faça seu cadastro</h3>
@@ -201,15 +227,15 @@
             </div>
 
             <div id="telacontatos">
-                <a href="https://www.instagram.com/c4ua_svm/" target="_blank"><div class="iconenome localaparecer">
+                <a href="https://www.instagram.com/c4ua_svm/" target="_blank"><div class="iconenome" data-aos="zoom-out" data-aos-delay="100" data-aos-duration="1000">
                     <i class="contato-icon bi bi-instagram"></i>
                     <h3>Instagram</h3>
                  </div></a>
-                 <a href="https://www.linkedin.com/in/cau%C3%A3-santos-7834332ab/" target="_blank"><div class="iconenome localaparecer">
+                 <a href="https://www.linkedin.com/in/cau%C3%A3-santos-7834332ab/" target="_blank"><div class="iconenome" data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000">
                     <i class="contato-icon bi bi-linkedin"></i>
                     <h3>LinkedIn</h3>
                 </div></a>
-                <a href="https://github.com/CauaSilva28" target="_blank"><div class="iconenome localaparecer">
+                <a href="https://github.com/CauaSilva28" target="_blank"><div class="iconenome" data-aos="zoom-out" data-aos-delay="500" data-aos-duration="1000">
                     <i class="contato-icon bi bi-github"></i>
                     <h3>GitHub</h3>
                 </div></a>
@@ -219,6 +245,7 @@
 
         <footer>©2023 CauaSilva | Adventure Experience</footer>
 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
