@@ -8,7 +8,7 @@
         display:none;
     }
 
-    header{
+    .header-inicio{
         position:static;
         background-color:#000;
         height:10vw;
@@ -75,7 +75,11 @@
         font-size:0vw;
     }
 
-    .conjuntopacotes > div:hover .nomepacotes{
+    .imagempacotes{
+        height:40vw;
+    }
+
+    .conjuntopacotes > a:hover .nomepacotes{
         font-size:3vw;
     }
     /* FIM PACOTES AVENTURA */
