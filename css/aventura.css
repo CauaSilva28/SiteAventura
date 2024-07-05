@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
 }
-
+/* Header */
 .header-aventura{
     position:fixed;
     width:100%;
@@ -15,19 +15,25 @@
     z-index:9999;
     padding-left:2vw;
 }
+.header-aventura a{
+    transition: ease-in-out 0.5s;
+}
+.header-aventura a:hover{
+    scale:1.1;
+}
 .header-aventura i, .header-aventura span{
     font-size:1.5vw;
     font-family:candara;
     font-weight:600;
 }
-
+/* fim header */
+/* pacotes inicio */
 .inicio-pacote{
-    background-image:url(../img/imgpacotes/imgprincipalmares.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment: fixed;
     width:100%;
-    height:45vw;
+    height:50vw;
 }
 .inicio-pacote-items{
     width:100%;
@@ -53,12 +59,13 @@
     font-family:candara;
     text-align: justify;
 }
+/* fim pacotes inicio */
 
 /* linhas transicao */
 .transicao-cima{
     border:none;
     background-color:#000;
-    box-shadow:0px -2px 25px 15px #000;
+    box-shadow:0px -2px 30px 20px #000;
     position:relative;
     z-index:99;
     opacity: 1;
@@ -69,7 +76,7 @@
     border:none;
     background-color:var(--bg-color);
     background-color:#000;
-    box-shadow:0px 2px 25px 15px #000;
+    box-shadow:0px 2px 30px 20px #000;
     position:relative;
     z-index:99;
     opacity: 1;
@@ -77,16 +84,15 @@
     width:100%;
 }
 
-/* pacote navios */
-.pacote-navios{
-    background-image:url(../img/imgpacotes/imgnavios.png);
+/* pacote geral */
+.pacotes{
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
     width:100%;
-    height:50vw;
+    height:55vw;
 }
-.pacote-navios-items{
+.pacotes-items{
     background-image:linear-gradient(black 5%, rgba(0, 0, 0, 0.87) 55%, rgba(0,0,0,0) 70%);
     height:75%;
     width:100%;
@@ -94,7 +100,7 @@
     flex-direction: column;
     text-align:center;
 }
-.pacote-navios-elementos{
+.pacotes-elementos{
     display:flex;
     flex-direction: column;
     gap:1.5vw;
@@ -103,18 +109,18 @@
     margin-right: auto;
     margin-top:3vw;
 }
-.pacote-navios-titulo{
+.pacotes-titulo{
     font-size:2.5vw;
 }
-.pacote-navios-text{
+.pacotes-text{
     font-size:1.4vw;
     color:#fff;
 }
 
-.pacote-navios-catalogo{
-    margin-top:5vw;
+.pacotes-catalogo{
+    margin-top:8vw;
 }
-.pacote-navios-catalogo .pacote-navios-subtitulo{
+.pacotes-catalogo .pacotes-subtitulo{
     font-size:2vw;
     color:#fff;
     text-transform: none;
@@ -129,6 +135,52 @@
 .catalogos{
     width:16vw;
     height:20vw;
-    background-color:#78d4ff;
+    background-color:#b1b1b1;
     border-radius:1rem;
 }
+/* fim pacotes geral */
+
+/* pacotes navio elementos */
+.inicio-pacote-mares{
+    background-image:url(../img/imgpacotes/imgprincipalmares.jpg);
+}
+
+.pacotes-navio{
+    background-image:url(../img/imgpacotes/imgnavios.png);
+}
+.pacotes-caiaque{
+    background-image:url(../img/imgpacotes/imgcaiaque.jpg);
+    background-position: center;
+}
+.pacotes-jetski{
+    background-image:url(../img/imgpacotes/imgjetski.jpg);
+}
+/* fim pacotes navio elementos */
+
+/* pacotes montanhas elementos */
+.inicio-pacote-montanhas{
+    background-image:url(../img/imgpacotes/imgprincipalmontanhas.jpg);
+}
+
+.pacotes-escalada{
+    background-image:url(../img/imgpacotes/imgescalada.jpg);
+}
+.pacotes-trilha{
+    background-image:url(../img/imgpacotes/imgtrilhas.jpg);
+    background-position: bottom;
+}
+.pacotes-rapel{
+    background-image:url(../img/imgpacotes/imgrapel.jpg);
+    background-position: center;
+}
+/* fim pacotes montanhas elementos */
+
+/* footer */
+.footer-pacotes{
+    background-color:#000;
+    padding:0.5vw;
+    font-size:1vw;
+    position: relative;
+    z-index:999;
+}
+/* fim footer */

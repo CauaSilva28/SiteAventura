@@ -70,12 +70,12 @@
         <section id="pacotesaventura">
             <h2>Pacotes de aventura</h2>
             <div class="conjuntopacotes">
-                <a href="aventura.html">
+                <a href="aventura.html#maresrios">
                     <div  class="imagempacotes" style="background-image:url(img/aventura.jpg);">
                         <h3 class="nomepacotes">Mares e rios</h3>
                     </div>
                 </a>
-                <a href="#">
+                <a href="aventura.html#montanhas">
                     <div class="imagempacotes" style="background-image:url(img/aventura2.jpg);">
                         <h3 class="nomepacotes">Montanhas</h3>
                     </div>
@@ -87,7 +87,7 @@
                 </a>
                 <a href="#">
                     <div class="imagempacotes" style="background-image:url(img/aventura4.jpg);">
-                        <h3 class="nomepacotes">Helicópteros</h3>
+                        <h3 class="nomepacotes">Aéreos</h3>
                     </div>
                 </a>
                 <a href="#">
@@ -208,23 +208,26 @@
         <section id="contato">
             <h2>Contato</h2>
 
-            <div id="telalogin" data-aos="zoom-in" data-aos-duration="1000">
+            <form id="telalogin" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="img/icon.png" />
 
-                <h3>Faça seu cadastro</h3>
+                <h3>Fale conosco</h3>
 
                 <div class="inputetexto">
-                    <h4>Email:</h4>
-                    <input type="email" placeholder="Digite seu email..." />
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome..." required/>
                 </div>
-                <br>
                 <div class="inputetexto">
-                    <h4>Senha:</h4>
-                    <input type="password" placeholder="Digite sua senha..." />
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Digite seu email..." required/>
+                </div>
+                <div class="inputetexto">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="telalogin-mensagem" name="mensagem" placeholder="Digite a sua mensagem..." rows="5" required></textarea>
                 </div>
 
                 <button>Cadastrar</button>
-            </div>
+            </form>
 
             <div id="telacontatos">
                 <a href="https://www.instagram.com/c4ua_svm/" target="_blank"><div class="iconenome">

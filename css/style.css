@@ -422,10 +422,13 @@ ul{
     }
 }
 
+/* Contato */
+
 #contato{
     background-image:url(../img/fundocontato.jpg);
     background-size:cover;
     background-repeat:no-repeat;
+    background-position: center;
     padding:0.5vw;
     margin-top: 1vw;
     box-shadow:2px 2px 6px 8px #154ec9;
@@ -436,15 +439,18 @@ ul{
 }
 
 #telalogin{
-    width:22vw;
-    height:30vw;
-    display:block;
+    width:26vw;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
     margin-left:auto;
     margin-right:auto;
     background-color:#000;
     border-radius:1em;
-    padding:1vw;
+    padding:2vw;
     animation:aumentando 5s ease-out infinite;
+    margin-top:2vw;
 }
 
 @keyframes aumentando{
@@ -462,7 +468,7 @@ ul{
 }
 
 #telalogin img{
-    width:5vw;
+    width:6vw;
     display:block;
     margin-left:auto;
     margin-right:auto;
@@ -472,7 +478,7 @@ ul{
 #telalogin h3{
     color:#fff;
     text-align:center;
-    font-size:1.3vw;
+    font-size:1.5vw;
     font-family:verdana;
 }
 
@@ -480,37 +486,48 @@ ul{
     width:100%;
     height:3vw;
     border-radius:3em;
-    margin-top:3vw;
     background-color:#0066ff;
     border:none;
     font-size:1vw;
     cursor:pointer;
 }
-
 #telalogin button:hover{
     background-color:#0040a0;
 }
 
-.inputetexto{
-    margin-top:2vw;
+.telalogin-mensagem{
+    min-height: 1.5vw;
+    max-width: 25.5vw;
+    min-width: 25.5vw;
+    border:none;
+    margin-top:0.5vw;
+    font-family:candara;
+    font-size:1.1vw;
 }
 
-.inputetexto h4{
+.inputetexto{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:2vw;
+}
+
+.inputetexto label{
     color:#fff;
-    margin-left:1vw;
+    margin-left:0.5vw;
     font-size:1.3vw;
     font-family:candara;
+    font-weight:600;
     margin-bottom:0;
 }
 
 .inputetexto input{
     margin-top:0.5vw;
-    width:20vw;
+    width:25vw;
     height:1vw;
     border:none;
-    border-radius:2em;
     padding:0.5vw;
-    font-size:1vw;
+    font-size:1.1vw;
+    font-family:candara;
     display:flex;
     margin-left:auto;
     margin-right:auto;

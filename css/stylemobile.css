@@ -133,9 +133,15 @@
     /* CONTATO */
     #telalogin{
         width:55vw;
-        height:70vw;
         padding:4vw 2vw 4vw 2vw;
         margin-top:4vw;
+    }
+
+    .telalogin-mensagem{
+        min-height: 3vw;
+        max-width: 50.5vw;
+        min-width: 50.5vw;
+        font-size:2.5vw;
     }
 
     #telalogin img{
@@ -149,13 +155,15 @@
 
     #telalogin button{
         height:5vw;
-        margin-top:8vw;
         font-size:2.5vw;
     }
 
-    .inputetexto h4{
+    .inputetexto{
+        margin-bottom:4vw;
+    }
+
+    .inputetexto label{
         font-size:3vw;
-        margin-left:3vw;
     }
 
     .inputetexto input{
