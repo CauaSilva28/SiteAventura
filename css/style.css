@@ -497,12 +497,16 @@ ul{
 
 .telalogin-mensagem{
     min-height: 1.5vw;
+    max-height: 6vw;
     max-width: 25.5vw;
     min-width: 25.5vw;
-    border:none;
+    border: none;
     margin-top:0.5vw;
     font-family:candara;
     font-size:1.1vw;
+    background-color:#252525;
+    outline: none;
+    color:#fff;
 }
 
 .inputetexto{
@@ -524,13 +528,16 @@ ul{
     margin-top:0.5vw;
     width:25vw;
     height:1vw;
-    border:none;
+    border: none;
     padding:0.5vw;
     font-size:1.1vw;
     font-family:candara;
     display:flex;
     margin-left:auto;
     margin-right:auto;
+    background-color:#252525;
+    outline: none;
+    color:#fff;
 }
 
 #telacontatos{

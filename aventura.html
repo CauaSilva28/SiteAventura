@@ -42,7 +42,7 @@
                 <div class="pacotes-catalogo">
                     <h2 class="pacotes-subtitulo" data-aos="zoom-in" data-aos-duration="1000">Catálogo</h2>
                     <div class="catalogos-row">
-                        <div class="catalogos" data-aos="flip-down" data-aos-delay="100" data-aos-duration="500">
+                        <div onclick="abrirTelaVenda()" class="catalogos" data-aos="flip-down" data-aos-delay="100" data-aos-duration="500">
                             
                         </div>
                         <div class="catalogos" data-aos="flip-down" data-aos-delay="300" data-aos-duration="500">
@@ -214,12 +214,64 @@
         </section> 
         <!-- FIM seção montanhas -->
 
+        <div id="fundoTelaVenda" class="fundoTelaVenda">
+            <div class="telaVenda">
+                <div class="telaVenda-cabecario">
+                    <span>Comprar pacote de aventura</span>
+                    <i onclick="fecharTelaVenda()" class="bi bi-x"></i>
+                </div>
+                
+                <div id="telaVenda-slider" class="telaVenda-slider">
+                    <i id="telaVenda-sliderL" class="bi bi-chevron-left"></i>
+                    <i id="telaVenda-sliderR" class="bi bi-chevron-right"></i>
+                </div>
+
+                <form>
+                    <div class="venda-input">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="venda-input">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="venda-input">
+                        <label for="quantidade">Quantidade de aventureiros</label>
+                        <input type="number" name="quantidade">
+                    </div>
+
+                    <span>País desejado</span>
+                    <div class="venda-radio"> 
+                        <input type="radio" name="pais" placeholder="Digite o País">
+                        <label for="pais">Brasil</label>
+  
+                        <input type="radio" name="pais" placeholder="Digite o País">
+                        <label for="pais">Estados Unidos</label>
+
+                        <input type="radio" name="pais" placeholder="Digite o País">
+                        <label for="pais">França</label>
+
+                        <input type="radio" name="pais" placeholder="Digite o País">
+                        <label for="pais">Canadá</label>
+
+                        <input type="radio" name="pais" placeholder="Digite o País">
+                        <label for="pais">Espanha</label>
+                    </div>
+
+                    <div class="venda-botoes">
+                        <button>Realizar compra</button>
+                        <button>Reservar aventura</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
         <hr class="transicao-cima">
         <hr class="transicao-baixo">
 
         <footer class="footer-pacotes">©2023 CauaSilva | Adventure Experience</footer>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/aventura.js"></script>
     </body>
 </html>
