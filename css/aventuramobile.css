@@ -1,0 +1,92 @@
+/* Aventura mobile */
+@media(max-width:900px){
+    /* Header */
+    .header-aventura{
+        height:15vw;
+        padding:1vw;
+        padding-left:5vw;
+    }
+    .header-aventura i, .header-aventura span{
+        font-size:4vw;
+    }
+    /* fim header */
+    /* pacotes inicio */
+    .inicio-pacote{
+        height:160vw;
+        background-position: center;
+    }
+    .inicio-pacote-elementos{
+        width:60%;
+    }
+    .inicio-pacote-titulo{
+        font-size:7vw;
+        margin-left:-0.5vw;
+    }
+    .inicio-pacote-text{
+        font-size:2.5vw;
+    }
+    /* fim pacotes inicio */
+
+    /* linhas transicao */
+    .transicao-cima{
+        box-shadow:0px -2px 25px 20px #000;
+    }
+    .transicao-baixo{
+        box-shadow:0px 2px 25px 20px #000;
+    }
+
+    /* pacote geral */
+    .pacotes{
+        height:180vw;
+        background-position: center;
+    }
+    .pacotes-items{
+        height:50%;
+    }
+    .pacotes-elementos{
+        width: 80%;
+        margin-top:6vw;
+    }
+    .pacotes-titulo{
+        font-size:6vw;
+    }
+    .pacotes-text{
+        font-size:2.5vw;
+    }
+
+    .pacotes-catalogo{
+        margin-top:10vw;
+    }
+    .pacotes-catalogo .pacotes-subtitulo{
+        font-size:5vw;
+    }
+
+    .catalogos-row{
+        margin-top:8vw;
+        gap:10vw;
+        justify-content: center;
+    }
+    .catalogos{
+        width:35vw;
+        height:44vw;
+    }
+    /* fim pacotes geral */
+
+    /* pacotes montanhas elementos */
+    .inicio-pacote-montanhas{
+        background-position: right;
+    }
+
+    .pacotes-trilha{
+        background-position: left;
+    }
+    /* fim pacotes montanhas elementos */
+
+    /* footer */
+    .footer-pacotes{
+        padding:2vw;
+        font-size:4vw;
+    }
+    /* fim footer */
+}
+/* Fim aventura mobile */

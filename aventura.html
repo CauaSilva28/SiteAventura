@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/aventura.css" />
+        <link rel="stylesheet" href="css/aventuramobile.css" />
     </head>
     <body>
         <header class="header-aventura">
@@ -133,7 +134,7 @@
         <section class="pacotes pacotes-escalada">
             <div class="pacotes-items">
                 <div class="pacotes-elementos" data-aos="fade-up" data-aos-duration="1000">
-                    <h1 class="pacotes-titulo">Escalada e Montanhismo</h1>
+                    <h1 class="pacotes-titulo">Escalada</h1>
                     <p class="pacotes-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
 
@@ -214,6 +215,7 @@
         </section> 
         <!-- FIM seção montanhas -->
 
+        <!-- Tela de venda -->
         <div id="fundoTelaVenda" class="fundoTelaVenda">
             <div class="telaVenda">
                 <div class="telaVenda-cabecario">
@@ -226,41 +228,55 @@
                     <i id="telaVenda-sliderR" class="bi bi-chevron-right"></i>
                 </div>
 
-                <form>
+                <h3 class="telaVenda-title">Passeio de cruzeiro oceano</h3>
+
+                <form class="telaVenda-form">
                     <div class="venda-input">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" placeholder="Digite seu nome">
+                        <input type="text" name="nome" placeholder="Digite seu nome" required>
                     </div>
                     <div class="venda-input">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" placeholder="Digite seu e-mail">
+                        <input type="email" name="email" placeholder="Digite seu e-mail" required>
                     </div>
                     <div class="venda-input">
                         <label for="quantidade">Quantidade de aventureiros</label>
-                        <input type="number" name="quantidade">
+                        <input type="number" name="quantidade" placeholder="Digite a quantidade" required>
+                    </div>
+                    
+                    <div class="venda-input">
+                        <span>País desejado</span>
+                        <div class="venda-radio-elementos"> 
+                            <div>
+                                <input type="radio" name="pais" required>
+                                <label for="pais">Brasil</label>
+                            </div>
+                            
+                            <div>
+                                <input type="radio" name="pais" required>
+                                <label for="pais">Estados Unidos</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="pais" required>
+                                <label for="pais">França</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="pais" required>
+                                <label for="pais">Canadá</label>
+                            </div>
+                        </div>
                     </div>
 
-                    <span>País desejado</span>
-                    <div class="venda-radio"> 
-                        <input type="radio" name="pais" placeholder="Digite o País">
-                        <label for="pais">Brasil</label>
-  
-                        <input type="radio" name="pais" placeholder="Digite o País">
-                        <label for="pais">Estados Unidos</label>
-
-                        <input type="radio" name="pais" placeholder="Digite o País">
-                        <label for="pais">França</label>
-
-                        <input type="radio" name="pais" placeholder="Digite o País">
-                        <label for="pais">Canadá</label>
-
-                        <input type="radio" name="pais" placeholder="Digite o País">
-                        <label for="pais">Espanha</label>
+                    <div class="venda-input">
+                        <label for="data">Data de ínicio desejada</label>
+                        <input type="date" name="data" required>
                     </div>
 
                     <div class="venda-botoes">
-                        <button>Realizar compra</button>
-                        <button>Reservar aventura</button>
+                        <button class="venda-botaoCompra">Realizar compra</button>
+                        <button class="venda-botaoReserva">Reservar aventura</button>
                     </div>
                 </form>
             </div>
