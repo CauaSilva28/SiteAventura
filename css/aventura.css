@@ -58,6 +58,7 @@
     color:#fff;
     font-family:candara;
     text-align: justify;
+    font-weight:400;
 }
 /* fim pacotes inicio */
 
@@ -115,6 +116,8 @@
 .pacotes-text{
     font-size:1.4vw;
     color:#fff;
+    font-family:candara;
+    font-weight:400;
 }
 
 .pacotes-catalogo{
@@ -244,9 +247,14 @@
     font-size:20px;
     cursor:pointer;
     color:#fff;
+    background-color:#0066ffc0;
+    border-radius:5em;
+    padding:3px;
+    transition: ease-in-out 0.2s;
 }
 .telaVenda-slider i:hover{
     color:#0066ff;
+    background-color:#ffffffc0;
 }
 
 .telaVenda-title{
@@ -327,6 +335,7 @@
     font-size:12px;
     border:none;
     cursor:pointer;
+    transition: ease-in-out 0.2s;
 }
 .venda-botaoCompra{
     background-color:#103fbe;
