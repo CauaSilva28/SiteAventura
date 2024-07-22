@@ -20,7 +20,7 @@ const titulosTelaVenda = [
 for (let i = 0; i < catalogos.length; i++) {
     catalogos[i].onclick = function() {
         telaVenda.style.display = 'flex';
-        imgTelaVenda.style.backgroundImage = 'url(../img/imgpacotes/imgTelaVenda/imgvenda' + i + '.jpg)';
+        imgTelaVenda.style.backgroundImage = 'url(img/imgpacotes/imgTelaVenda/imgvenda' + i + '.jpg)';
         telaVendaTitulo.textContent = titulosTelaVenda[i];
     };
 }
