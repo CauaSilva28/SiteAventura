@@ -232,18 +232,17 @@
     font-size:20px;
     color:#fff;
 }
-.telaVenda-slider{
-    height:164px;
+.telaVenda-img{
+    height:200px;
     padding:0vw 13px 0vw 13px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    background-image:url(../img/imgpacotes/imgTelaVendaNavio/cruzeiro1.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position: center;
 }
-.telaVenda-slider i{
+.telaVenda-img i{
     font-size:20px;
     cursor:pointer;
     color:#fff;
@@ -252,12 +251,12 @@
     padding:3px;
     transition: ease-in-out 0.2s;
 }
-.telaVenda-slider i:hover{
+.telaVenda-img i:hover{
     color:#0066ff;
     background-color:#ffffffc0;
 }
 
-.telaVenda-title{
+#telaVenda-title{
     color:#103fbe;
     font-size:19px;
     font-family:candara;
