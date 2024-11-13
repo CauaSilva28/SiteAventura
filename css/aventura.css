@@ -144,41 +144,6 @@
 }
 /* fim pacotes geral */
 
-/* pacotes navio elementos */
-.inicio-pacote-mares{
-    background-image:url(../img/imgpacotes/imgprincipalmares.jpg);
-}
-
-.pacotes-navio{
-    background-image:url(../img/imgpacotes/imgnavios.png);
-}
-.pacotes-caiaque{
-    background-image:url(../img/imgpacotes/imgcaiaque.jpg);
-    background-position: center;
-}
-.pacotes-jetski{
-    background-image:url(../img/imgpacotes/imgjetski.jpg);
-}
-/* fim pacotes navio elementos */
-
-/* pacotes montanhas elementos */
-.inicio-pacote-montanhas{
-    background-image:url(../img/imgpacotes/imgprincipalmontanhas.jpg);
-}
-
-.pacotes-escalada{
-    background-image:url(../img/imgpacotes/imgescalada.jpg);
-}
-.pacotes-trilha{
-    background-image:url(../img/imgpacotes/imgtrilhas.jpg);
-    background-position: bottom;
-}
-.pacotes-rapel{
-    background-image:url(../img/imgpacotes/imgrapel.jpg);
-    background-position: center;
-}
-/* fim pacotes montanhas elementos */
-
 /* footer */
 .footer-pacotes{
     background-color:#000;
