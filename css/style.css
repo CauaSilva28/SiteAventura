@@ -55,7 +55,7 @@ body{
     position:fixed;
     width:100%;
     height:4vw;
-    background-color:rgba(0,0,0,80%);
+    background-image: linear-gradient(#000000f1 20%, #000000b7 60%, transparent 100%);
     display:flex;
     align-items:center;
     padding:0.5vw;
@@ -173,7 +173,7 @@ h2{
 hr{
     width:95%;
     background-color:#3d3d3d;
-    height:3px;
+    height:4px;
     border-radius:100%;
     border:none;
     opacity:15%;
@@ -422,6 +422,107 @@ ul{
     }
 }
 
+/* Atividades */
+
+#atividades{
+    background-image: url(../img/aventura.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    height:48vw;
+    margin-top:2vw;
+    transition: 0.5s ease-out;
+}
+
+.ativ_conteudo{
+    background-image: linear-gradient(#000000f6 5%, #000000b2 50%, #0000003f 90%, transparent 100%);
+    padding:1vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+#ativ_titulo{
+    font-family:arial black;
+    font-size:3vw;
+    color:#fff;
+}
+
+.ativ_carrosel{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.ativ_cards{
+    margin-top:5vw;
+    width:17vw;
+    background-color: #000000b9;
+    box-shadow: 0px 0px 12px 7px #000;
+    padding:1vw 1vw 3vw 1vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1vw;
+}
+
+.ativ_iconCards{
+    margin-top:-5vw;
+    width:8vw;
+    height:8vw;
+    border-radius: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#153999;
+    transition:0.5s ease-out;
+}
+
+.ativ_iconImg{
+    width:5vw;
+    transition:0.5s ease-out;
+}
+.ativ_iconCards:hover{
+    box-shadow: 0px 0px 15px 7px #001a61;
+}
+
+.ativ_iconCards:hover .ativ_iconImg{
+    filter:invert(1);
+}
+
+.ativ_subTitulo{
+    color:#fff;
+    font-size:1.6vw;
+    font-family:arial black;
+    text-align:center;
+    margin:0;
+}
+
+.ativ_text{
+    color:#fff;
+    font-size:1.3vw;
+    font-family:candara;
+    text-align:justify;
+    text-indent:2vw;
+    margin:0;
+}
+
+#ativ_setaL, #ativ_setaR{
+    color:#fff;
+    font-size:3vw;
+    cursor:pointer;
+    transition: 0.3s ease-out;
+}
+
+#ativ_setaL:hover, #ativ_setaR:hover{
+    color:#153999;
+    scale:1.1;
+}
+
 /* Contato */
 
 #contato{
@@ -430,7 +531,7 @@ ul{
     background-repeat:no-repeat;
     background-position: center;
     padding:0.5vw;
-    margin-top: 1vw;
+    margin-top: 2vw;
     box-shadow:2px 2px 6px 8px #154ec9;
 }
 

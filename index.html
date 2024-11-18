@@ -53,12 +53,12 @@
         </nav>
 
         <div id="imagemcapa">
-            <div id="inicio">
+            <div id="inicio" data-aos="zoom-in" data-aos-duration="1000">
                 <h2 class="fonttitle">Bem vindo ao Adventure Experience, aqui a aventura não tem limite</h2>
-                <button id="botaoprincipal" onclick="pacotesdeaventura()">Veja nossas atividades</button>
+                <a href="#atividades"><button id="botaoprincipal">Veja nossas atividades</button></a> 
             </div>
 
-            <div id="botoespassarimg">
+            <div id="botoespassarimg" data-aos="fade-up" data-aos-duration="1000">
                 <button onclick="mudar1()" id="botaopassar1" class="passarimg"></button>
                 <button onclick="mudar2()" id="botaopassar2" class="passarimg"></button>
                 <button onclick="mudar3()" id="botaopassar3" class="passarimg"></button>
@@ -69,7 +69,7 @@
 
         <section id="pacotesaventura">
             <h2>Pacotes de aventura</h2>
-            <div class="conjuntopacotes">
+            <div class="conjuntopacotes" data-aos="fade-up" data-aos-duration="1000">
                 <a onclick="TrocaTela('Mares')">
                     <div  class="imagempacotes" style="background-image:url(img/aventura.jpg);">
                         <h3 class="nomepacotes">Mares e rios</h3>
@@ -201,6 +201,51 @@
                 </div>
             </section>
 
+        </section>
+
+        <br><br>
+        <hr>
+
+        <section id="atividades">
+            <div class="ativ_conteudo">
+                <h3 id="ativ_titulo">Atividades maritimas</h3>
+
+                <div class="ativ_carrosel">
+                    <i id="ativ_setaL" class="bi bi-chevron-left"></i>
+
+                    <div class="ativ_cards" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="ativ_iconCards">
+                            <img src="img/icones/dificuldades.png" class="ativ_iconImg"/>
+                        </div>
+
+                        <h3 class="ativ_subTitulo">Dificuldades</h3>
+
+                        <p class="ativ_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+
+                    <div class="ativ_cards" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <div class="ativ_iconCards">
+                            <img src="img/icones/fisico.png" class="ativ_iconImg"/>
+                        </div>
+
+                        <h3 class="ativ_subTitulo">Requisitos físicos</h3>
+
+                        <p class="ativ_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+
+                    <div class="ativ_cards" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                        <div class="ativ_iconCards">
+                            <img src="img/icones/equipamentos.png" class="ativ_iconImg"/>
+                        </div>
+
+                        <h3 class="ativ_subTitulo">Equipamentos</h3>
+
+                        <p class="ativ_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+
+                    <i id="ativ_setaR" class="bi bi-chevron-right"></i>
+                </div>
+            </div>
         </section>
 
         <br><br>
