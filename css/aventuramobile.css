@@ -72,16 +72,6 @@
     }
     /* fim pacotes geral */
 
-    /* pacotes montanhas elementos */
-    .inicio-pacote-montanhas{
-        background-position: right;
-    }
-
-    .pacotes-trilha{
-        background-position: left;
-    }
-    /* fim pacotes montanhas elementos */
-
     /* footer */
     .footer-pacotes{
         padding:2vw;
