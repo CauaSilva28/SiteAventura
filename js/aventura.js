@@ -165,6 +165,144 @@ function aventuraNeve(){
     parte4.mudarTela(tituloCatalogo4, descricaoCatalogo4, fundoCatalogo4);
 }
 
+function aventuraAereo(){
+    let titulosTelaVenda = [
+        'Esqui em altas montanhas',
+        'Esqui em pequenas montanhas',
+        'Snowboarding com rampas',
+        'Snowboarding montanhas',
+    ];
+    
+    for (let i = 0; i < catalogos.length; i++) {
+        catalogos[i].onclick = function() {
+            telaVenda.style.display = 'flex';
+            imgTelaVenda.style.backgroundImage = 'url(img/imgpacotes/imgTelaVenda/imgvendaaereo' + i + '.jpg)';
+            telaVendaTitulo.textContent = titulosTelaVenda[i];
+        };
+    }
+
+    let parteInicial = new Catalogos(
+        'Aéreos', 
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        'url(img/aventura4.jpg)'
+    );
+
+    let parte2 = new Catalogos(
+        'Avião e helicóptero', 
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        'url(img/imgpacotes/imgaviao.jpg)'
+    );
+
+    let parte3 = new Catalogos(
+        'Asa delta e parapente', 
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        'url(img/imgpacotes/imgasa.jpg)'
+    );
+
+    let parte4 = new Catalogos(
+        'Passeio de balão', 
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        'url(img/imgpacotes/imgbalao.jpg)'
+    );
+
+    parteInicial.mudarTela(tituloCatalogo1, descricaoCatalogo1, fundoCatalogo1);
+    parte2.mudarTela(tituloCatalogo2, descricaoCatalogo2, fundoCatalogo2);
+    parte3.mudarTela(tituloCatalogo3, descricaoCatalogo3, fundoCatalogo3);
+    parte4.mudarTela(tituloCatalogo4, descricaoCatalogo4, fundoCatalogo4);
+}
+
+function aventuraAcampamento(){
+    let titulosTelaVenda = [
+        'Esqui em altas montanhas',
+        'Esqui em pequenas montanhas',
+        'Snowboarding com rampas',
+        'Snowboarding montanhas',
+    ];
+    
+    for (let i = 0; i < catalogos.length; i++) {
+        catalogos[i].onclick = function() {
+            telaVenda.style.display = 'flex';
+            imgTelaVenda.style.backgroundImage = 'url(img/imgpacotes/imgTelaVenda/imgvendaaereo' + i + '.jpg)';
+            telaVendaTitulo.textContent = titulosTelaVenda[i];
+        };
+    }
+
+    let parteInicial = new Catalogos(
+        'Acampamentos', 
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        'url(img/aventura5.jpg)'
+    );
+
+    let parte2 = new Catalogos(
+        'Camping de aventura', 
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        'url(img/imgpacotes/imgcampingaventura.jpg)'
+    );
+
+    let parte3 = new Catalogos(
+        'Camping de trailer ou motorhome', 
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        'url(img/imgpacotes/imgtrailer.jpg)'
+    );
+
+    let parte4 = new Catalogos(
+        'Camping selvagem', 
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        'url(img/imgpacotes/imgcampingselvagem.jpg)'
+    );
+
+    parteInicial.mudarTela(tituloCatalogo1, descricaoCatalogo1, fundoCatalogo1);
+    parte2.mudarTela(tituloCatalogo2, descricaoCatalogo2, fundoCatalogo2);
+    parte3.mudarTela(tituloCatalogo3, descricaoCatalogo3, fundoCatalogo3);
+    parte4.mudarTela(tituloCatalogo4, descricaoCatalogo4, fundoCatalogo4);
+}
+
+function aventuraCachoeira(){
+    let titulosTelaVenda = [
+        'Esqui em altas montanhas',
+        'Esqui em pequenas montanhas',
+        'Snowboarding com rampas',
+        'Snowboarding montanhas',
+    ];
+    
+    for (let i = 0; i < catalogos.length; i++) {
+        catalogos[i].onclick = function() {
+            telaVenda.style.display = 'flex';
+            imgTelaVenda.style.backgroundImage = 'url(img/imgpacotes/imgTelaVenda/imgvendaaereo' + i + '.jpg)';
+            telaVendaTitulo.textContent = titulosTelaVenda[i];
+        };
+    }
+
+    let parteInicial = new Catalogos(
+        'Cachoeiras', 
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        'url(img/aventura6.jpg)'
+    );
+
+    let parte2 = new Catalogos(
+        'Nado nas cachoeiras', 
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        'url(img/imgpacotes/imgnadocachoeira.jpg)'
+    );
+
+    let parte3 = new Catalogos(
+        'Canionismo e Cascading', 
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        'url(img/imgpacotes/imgcanionismo.jpg)'
+    );
+
+    let parte4 = new Catalogos(
+        'Exploração nas cachoeiras', 
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        'url(img/imgpacotes/imgcachoeiraexplorar.jpg)'
+    );
+
+    parteInicial.mudarTela(tituloCatalogo1, descricaoCatalogo1, fundoCatalogo1);
+    parte2.mudarTela(tituloCatalogo2, descricaoCatalogo2, fundoCatalogo2);
+    parte3.mudarTela(tituloCatalogo3, descricaoCatalogo3, fundoCatalogo3);
+    parte4.mudarTela(tituloCatalogo4, descricaoCatalogo4, fundoCatalogo4);
+}
+
 function TrocaTela(id) {
     sessionStorage.setItem('clicado', id);
     window.location.href = 'aventura.html';
@@ -183,6 +321,16 @@ window.onload = function() {
                 break;
             case 'Neve':
                 aventuraNeve();
+                break;
+            case 'Aereo':
+                aventuraAereo();
+                break;
+            case 'Acampamentos':
+                aventuraAcampamento();
+                break;
+            case 'Cachoeiras':
+                aventuraCachoeira();
+                break;
             default:
                 null;
         }
