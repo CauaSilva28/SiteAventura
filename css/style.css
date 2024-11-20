@@ -425,13 +425,14 @@ ul{
 /* Atividades */
 
 #atividades{
-    background-image: url(../img/aventura.jpg);
+    background-image: url(../img/aventura1.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
-    height:48vw;
+    height:53vw;
     margin-top:2vw;
+    margin-bottom:2vw;
     transition: 0.5s ease-out;
 }
 
@@ -460,6 +461,7 @@ ul{
 .ativ_cards{
     margin-top:5vw;
     width:17vw;
+    height:25vw;
     background-color: #000000b9;
     box-shadow: 0px 0px 12px 7px #000;
     padding:1vw 1vw 3vw 1vw;
@@ -471,7 +473,8 @@ ul{
 }
 
 .ativ_iconCards{
-    margin-top:-5vw;
+    position:absolute;
+    top:-5vw;
     width:8vw;
     height:8vw;
     border-radius: 100%;
@@ -487,7 +490,7 @@ ul{
     transition:0.5s ease-out;
 }
 .ativ_iconCards:hover{
-    box-shadow: 0px 0px 15px 7px #001a61;
+    box-shadow: 0px 0px 10px 2px #ffffff;
 }
 
 .ativ_iconCards:hover .ativ_iconImg{
@@ -499,15 +502,14 @@ ul{
     font-size:1.6vw;
     font-family:arial black;
     text-align:center;
-    margin:0;
+    margin:3vw 0 0 0;
 }
 
 .ativ_text{
     color:#fff;
     font-size:1.3vw;
     font-family:candara;
-    text-align:justify;
-    text-indent:2vw;
+    text-align:center;
     margin:0;
 }
 
@@ -521,6 +523,26 @@ ul{
 #ativ_setaL:hover, #ativ_setaR:hover{
     color:#153999;
     scale:1.1;
+}
+
+.ativ_conjuntoBtns{
+    display:flex;
+    gap:1vw;
+    margin-top:4vw;
+}
+
+.ativ_btn{
+    width:1.5vw;
+    height:1.5vw;
+    border-radius:100%;
+    background-color:#fff;
+    transition: 0.3s ease-out;
+}
+
+.ativ_active{
+    background-color:#154ec9;
+    box-shadow: 0px 0px 10px 5px #02297c;
+    border: 3px solid #fff;
 }
 
 /* Contato */

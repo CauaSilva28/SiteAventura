@@ -27,8 +27,8 @@
     /* FIM HEADER */
     /* INICIO */
     #imagemcapa{
-        height:70vw;
-        gap:5vw;
+        height:110vw;
+        gap:8vw;
         background-position: center;
     }
 
@@ -38,7 +38,7 @@
     }
 
     .fonttitle{
-        font-size:3.6vw;
+        font-size:4.5vw;
         text-shadow: 2px 2px #063db4;
     }
 
@@ -46,7 +46,7 @@
         font-size:3.4vw;
         height:8vw;
         width:50vw;
-        margin-top:6vw;
+        margin-top:8vw;
     }
 
     #botoespassarimg{
@@ -131,7 +131,73 @@
         font-size:3vw;
     }
     /* FIM EQUIPE */
+
+    /* ATIVIDADES */
+
+    #atividades{
+        height:105vw;
+        margin-top:5vw;
+        margin-bottom:5vw;
+    }
+
+    #ativ_titulo{
+        font-size:5vw;
+    }
+
+    .ativ_conteudo{
+        padding-top:5vw;
+    }
+
+    .ativ_cards{
+        margin-top:10vw;
+        height:55vw;
+        box-shadow: 0px 0px 5px 3px #000;
+        width:25vw;
+        gap:2vw;
+    }
+
+    .ativ_iconCards{
+        top:-10vw;
+        width:15vw;
+        height:15vw;
+    }
+    .ativ_iconCards:hover{
+        box-shadow: 0px 0px 5px 1px #ffffff;
+    }
+
+    .ativ_iconImg{
+        width:8vw;
+    }
+
+    .ativ_subTitulo{
+        font-size:2.5vw;
+        margin:5vw 0 0 0;
+    }
+
+    .ativ_text{
+        font-size:2.4vw;
+    }
+
+    #ativ_setaL, #ativ_setaR{
+        font-size:4vw;
+    }
+
+    .ativ_conjuntoBtns{
+        gap:2vw;
+        margin-top:6vw;
+    }
+    
+    .ativ_btn{
+        width:3vw;
+        height:3vw;
+    }
+    /* FIM ATIVIDADES */
+
     /* CONTATO */
+    #contato{
+        margin-top:5vw;
+    }
+
     #telalogin{
         width:55vw;
         padding:4vw 2vw 4vw 2vw;
