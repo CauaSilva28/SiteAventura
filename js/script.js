@@ -129,7 +129,7 @@ function verificarBtn(){
     for(let i=0;i<ativBtn.length;i++){
         if(numBtnActive == i){
             let numImg = i+1;
-            fundoCarroselAtiv.style.backgroundImage = 'url(../img/aventura' + numImg + '.jpg)';
+            fundoCarroselAtiv.style.backgroundImage = 'url(img/aventura' + numImg + '.jpg)';
             tituloPrincipalAtiv.innerHTML = tituloCards[i];
             textosCardsAtiv[0].innerHTML = descricaoCardDificuldades[i];
             textosCardsAtiv[1].innerHTML = descricaoCardRequisitos[i];
