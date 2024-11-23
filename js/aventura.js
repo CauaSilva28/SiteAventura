@@ -167,10 +167,10 @@ function aventuraNeve(){
 
 function aventuraAereo(){
     let titulosTelaVenda = [
-        'Esqui em altas montanhas',
-        'Esqui em pequenas montanhas',
-        'Snowboarding com rampas',
-        'Snowboarding montanhas',
+        'Passeio de helicóptero nas montanhas',
+        'Viagem de avião',
+        'Viagem de avião e salto paraquedas',
+        'Viagem de helicóptero e salto paraquedas',
     ];
     
     for (let i = 0; i < catalogos.length; i++) {
@@ -222,7 +222,7 @@ function aventuraAcampamento(){
     for (let i = 0; i < catalogos.length; i++) {
         catalogos[i].onclick = function() {
             telaVenda.style.display = 'flex';
-            imgTelaVenda.style.backgroundImage = 'url(img/imgpacotes/imgTelaVenda/imgvendaaereo' + i + '.jpg)';
+            imgTelaVenda.style.backgroundImage = 'url(img/imgpacotes/imgTelaVenda/imgvendaacampamento' + i + '.jpg)';
             telaVendaTitulo.textContent = titulosTelaVenda[i];
         };
     }
@@ -268,7 +268,7 @@ function aventuraCachoeira(){
     for (let i = 0; i < catalogos.length; i++) {
         catalogos[i].onclick = function() {
             telaVenda.style.display = 'flex';
-            imgTelaVenda.style.backgroundImage = 'url(img/imgpacotes/imgTelaVenda/imgvendaaereo' + i + '.jpg)';
+            imgTelaVenda.style.backgroundImage = 'url(img/imgpacotes/imgTelaVenda/imgvendacachoeira' + i + '.jpg)';
             telaVendaTitulo.textContent = titulosTelaVenda[i];
         };
     }
