@@ -32,35 +32,31 @@
         background-position: center;
     }
 
-    #inicio{
-        width:90vw;
-        margin-top:2vw;
-    }
-
     .fonttitle{
         font-size:4.5vw;
-        text-shadow: 2px 2px #063db4;
+        line-height: 7vw;
+    }
+    .fonttitle span{
+        font-size:4.5vw;
+    }
+
+    #inicio{
+        padding:5vw 0vw;
     }
 
     #botaoprincipal{
         font-size:3.4vw;
         height:8vw;
         width:50vw;
-        margin-top:8vw;
     }
 
-    #botoespassarimg{
-        display:flex;
+    .botoespassarimg{
         gap:5vw;
     }
     
     .passarimg{
-        width:9vw;
-        height:3vw;
-    }
-
-    .passarimg:hover{
-        scale:120%;
+        width:4vw;
+        height:4vw;
     }
     /* FIM INICIO */
     /* PACOTES AVENTURA */

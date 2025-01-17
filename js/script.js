@@ -1,73 +1,25 @@
 AOS.init();
 
-const toggleTheme = document.querySelector('#toggletheme');
-const rootHtml = document.documentElement;
+function PassarCapa(){
+    let capa = document.getElementById('imagemcapa');
+    let btnPassar = document.querySelectorAll('.passarimg');
 
-const btnpassar1 = document.getElementById('botaopassar1');
-const btnpassar2 = document.getElementById('botaopassar2');
-const btnpassar3 = document.getElementById('botaopassar3');
+    for(let i=0;i<btnPassar.length;i++){
+        let num = i+1;
+        btnPassar[i].addEventListener('click', function(){
 
-const capa = document.getElementById('imagemcapa');
-var num = 1;
+            btnPassar.forEach(function(btn) {
+                btn.classList.remove('passarimg_active');
+            });
 
-//Carrosel inicial
+            btnPassar[i].classList.add('passarimg_active');
 
-destacarbtn();
-
-capa.style.backgroundImage = "url(img/capaaventura" + num + ".jpg)";
-
-function mudar1(){
-    num=1;
-    capa.style.backgroundImage = "url(img/capaaventura" + num + ".jpg)";
-    destacarbtn();
-}
-function mudar2(){
-    num=2;
-    capa.style.backgroundImage = "url(img/capaaventura" + num + ".jpg)";
-    destacarbtn();
-}
-function mudar3(){
-    num=3;
-    capa.style.backgroundImage = "url(img/capaaventura" + num + ".jpg)";
-    destacarbtn();
-}
-
-setInterval(function(){
-    num++;
-    if(num > 3){
-        num = 1;
-    }
-
-    destacarbtn();
-    
-    capa.style.backgroundImage = "url(img/capaaventura" + num + ".jpg)";
-},5000);
-
-function destacarbtn(){
-    if(num == 1){
-        btnpassar1.style.background = '#c7d9ff';
-        btnpassar1.style.scale = '130%';
-        btnpassar2.style.background = '#3258a8';
-        btnpassar2.style.scale = '100%';
-        btnpassar3.style.background = '#3258a8';
-        btnpassar3.style.scale = '100%';
-    }
-    else if(num == 2){
-        btnpassar2.style.background = '#c7d9ff';
-        btnpassar2.style.scale = '130%';
-        btnpassar1.style.background = '#3258a8';
-        btnpassar1.style.scale = '100%';
-        btnpassar3.style.background = '#3258a8';
-        btnpassar3.style.scale = '100%';
-    }else{
-        btnpassar3.style.background = '#c7d9ff';
-        btnpassar3.style.scale = '130%';
-        btnpassar2.style.background = '#3258a8';
-        btnpassar2.style.scale = '100%';
-        btnpassar1.style.background = '#3258a8';
-        btnpassar1.style.scale = '100%';
+            capa.style.backgroundImage = 'url(../img/capaaventura' + num + '.jpg';
+        });
     }
 }
+
+PassarCapa();
 
 //Carrosel atividades
 const setaR = document.getElementById('ativ_setaR');
@@ -164,11 +116,12 @@ setaL.addEventListener('click', function(){
     verificarBtn();
 });
 
-
-
 //Alternar modo light e dark
+const toggleTheme = document.querySelector('#toggletheme');
+const rootHtml = document.documentElement;
+
 function changeTheme(){
-    const currentTheme = rootHtml.getAttribute('data-theme');
+    let currentTheme = rootHtml.getAttribute('data-theme');
 
     if (currentTheme === 'dark') {
         rootHtml.setAttribute('data-theme', 'light');

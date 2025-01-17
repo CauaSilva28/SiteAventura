@@ -184,24 +184,28 @@ hr{
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    gap:2vw;
+    gap:4vw;
     background-color:#000;
     width:100%;
-    height:40vw;
+    height:45vw;
+    background-image: url(../img/capaaventura1.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment: fixed;
     transition:1s;
 }
 
-#botoespassarimg{
-    margin-top:2vw;
+.botoespassarimg{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:2vw;
+    margin-top:7vw;
 }
 
 .passarimg{
-    width:3vw;
+    width:1vw;
     height:1vw;
-    margin-left:1vw;
     border-radius:1em;
     border:1px solid #c7d9ff;
     box-shadow: 4px 0px 18px 4px #3258a8;
@@ -209,35 +213,55 @@ hr{
     cursor:pointer;
     transition:ease-in-out 0.5s;
 }
+.passarimg:hover{
+    scale:120%;
+}
+
+.passarimg_active{
+    background-color:#c7d9ff;
+    scale:1.2;
+}
 
 #inicio{
-    margin-top:6vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap:2vw;
+    background-color:#00000088;
+    width:100%;
+    padding: 2vw 0vw;
+    margin-top:7vw;
 }
 
 .fonttitle{
-    font-size:1.7vw;
-    font-family:arial black;
+    font-size:2.5vw;
+    font-family:arial;
     color:#fff;
-    text-transform:uppercase;
-    text-shadow: 3px 3px #063db4;
+    text-transform: none;
+    line-height: 3.5vw;
+    text-shadow: 0.1vw 0.1vw #000000;
+}
+.fonttitle span{
+    color:#0066ff;
+    font-weight:bolder;
+    font-size:2.6vw;
+    text-transform: uppercase;
 }
 
 #botaoprincipal{
     transform:translateX(0vw);
     animation:movimento 7s ease-out infinite;
-    margin-top:4vw;
-    font-size:1.2vw;
+    padding:0.8vw 0vw;
+    font-size:1vw;
     border-radius:2em;
-    height:3vw;
-    width:20vw;
-    padding:0.5vw;
+    width:15vw;
     font-family:Candara;
     display:block;
     margin-left:auto;
     margin-right:auto;
     color:#fff;
     border:none;
-    box-shadow: 3px 0px 38px 6px #3258a8;
     background: rgb(3,15,56);
     background: linear-gradient(170deg, rgba(3,15,56,1) 14%, rgba(0,29,129,1) 35%, rgba(15,71,163,1) 54%, rgba(18,87,176,1) 67%, rgba(8,118,235,1) 77%, rgba(52,151,254,1) 98%);
     cursor:pointer;
@@ -254,7 +278,7 @@ hr{
     }
 
     50%{
-        transform:translateY(-2vw);
+        transform:translateY(-1.5vw);
     }
 
     100%{
