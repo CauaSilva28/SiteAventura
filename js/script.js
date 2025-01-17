@@ -14,7 +14,7 @@ function PassarCapa(){
 
             btnPassar[i].classList.add('passarimg_active');
 
-            capa.style.backgroundImage = 'url(../img/capaaventura' + num + '.jpg';
+            capa.style.backgroundImage = 'url(img/capaaventura' + num + '.jpg';
         });
     }
 }
